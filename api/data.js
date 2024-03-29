@@ -1,6 +1,6 @@
 export default function handler(request, response) {
   const types = ['cash', 'noluck', 'draw again'];
-      const randomDataLength = Math.floor(Math.random() * 4) + 6; // Random number between 6 and 9
+      const randomDataLength = Math.random() < 0.5 ? 16 : 20 // Random number between 6 and 9
       const data = [];
   
       for (let i = 0; i < randomDataLength; i++) {
